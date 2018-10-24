@@ -1,0 +1,20 @@
+<section class="main fadein fadeInLeft section_login">
+
+  <div class="login_box rubberBand animated">
+    <img class="login_image" src="assets/images/logo-login.png">
+    <form class="login_form" [formGroup]="formulario" (ngSubmit)="login(formulario)">
+      <label class="login_form_label">Introduce tu nick y pulsa el botón de Log-In</label>
+      <div class="login_form_error" *ngIf="formulario.get('idAuthor').hasError('required') && !formulario.get('idAuthor').pristine" >
+        El nombre es obligatorio
+      </div>
+      <div class="login_form_error" *ngIf="usuarioNoExiste">
+        No existe este nick
+      </div>
+      <input type="text" class="login_form_input-text" formControlName="idAuthor" formControlName="idAuthor" />
+      <button type="submit" class="login_button" [disabled]="formulario.invalid">Log-In</button>
+    </form>
+    <!-- <div class="login_text">Pulsa el botón de Log-In para entrar en Tweempus con tu cuenta de Google</div> -->
+    <!-- <button class="login_button" (click)="login()">Log-in</button> -->
+  </div>
+
+</section>

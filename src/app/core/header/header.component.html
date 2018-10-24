@@ -1,0 +1,5 @@
+<section class="section-header">
+	<h2 class="header_title" routerLink="/dashboard" ><a role="button" >Tweempus</a></h2>
+	<button class="header_auth" *ngIf="!logado()" routerLink="/register">Regístrate</button>
+	<button class="header_auth" (click)="logOut()" *ngIf="logado()">Cerrar sesión</button>
+</section>

@@ -1,0 +1,26 @@
+<section class="author_card">
+
+  <div class="author_data">
+    <div class="author_data_img_wrap">
+      <img class="author_data_img" [src]="author?.image" alt="Imagen del usuario">
+    </div>
+    <div class="author_data_name">
+      {{author?.fullName}}
+    </div>
+  </div>
+
+  <nav class="author_nav">
+    <ul class="author_nav_list">
+      <li class="author_nav_list_item" routerLinkActive="author_nav_list_item-selected">
+        <a class="author_nav_list_link" routerLink="mios">Mis Twimps</a>
+      </li>
+      <li class="author_nav_list_item" routerLinkActive="author_nav_list_item-selected">
+        <a class="author_nav_list_link" routerLink="favoritos">Mis Favoritos</a>
+      </li>
+      <li *ngIf="checkAuthor()" class="author_nav_list_item" routerLinkActive="author_nav_list_item-selected">
+        <a class="author_nav_list_link" routerLink="edit">Mis datos</a>
+      </li>
+    </ul>
+  </nav>
+
+</section>

@@ -1,0 +1,16 @@
+<section class="main section_create_twimp">
+  <div class="create_twimp_box rubberBand">
+    <form class="create_twimp_form" [formGroup]="newTwimpForm" (ngSubmit)="crear(newTwimpForm)">
+      <label><h3>Crea tu twimp:</h3></label>
+      <div class="create_twimp_error" *ngIf="newTwimpForm.get('texto').hasError('required') && !newTwimpForm.get('texto').pristine">
+        El texto del twimp es obligatorio
+      </div>
+      <div class="create_twimp_error" *ngIf="newTwimpForm.get('texto').hasError('maxlength') && !newTwimpForm.get('texto').pristine">
+        El texto del twimp no puede tener más de 140 caracteres
+      </div>
+      <textarea class="create_twimp_textarea" placeholder="Máximo 140 caracteres" formControlName="texto"></textarea>
+      <button type="submit" class="create_twimp_button" [disabled]="newTwimpForm.invalid">Publicar</button>
+    </form>
+  </div>
+
+</section>

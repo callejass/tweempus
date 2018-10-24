@@ -1,0 +1,30 @@
+<section class="main section_signup">
+
+  <div class="signup_box rubberBand">
+    <img class="signup_image" src="assets/images/google-icon.png">
+    <form class="signup_form" [formGroup]="editUserForm" (ngSubmit)="update(editUserForm)">
+      <!-- NICK -->
+      <label class="signup_form_label">Nick:</label>      
+      <input type="text" class="signup_form_input-text" formControlName="idAuthor" readonly>
+      <!-- NICK -->
+
+      <!-- FULL NAME -->
+      <label class="signup_form_label">Introduce tu nombre:*</label>
+      <div class="signup_form_error" *ngIf="editUserForm.get('fullName').hasError('required') && !editUserForm.get('fullName').pristine">
+        El nombre es obligatorio
+      </div>
+      <div class="signup_form_error" *ngIf="editUserForm.get('fullName').hasError('minlength') && !editUserForm.get('fullName').pristine">
+        Tu nombre debe tener como mínimo 5 carácteres
+      </div>
+      <input type="text" class="signup_form_input-text" formControlName="fullName">
+      <!-- FULL NAME -->
+
+      <!-- IMAGE -->
+      <label class="signup_form_label">Añade una URL para tu imagen de perfil:</label>
+      <input type="url" class="signup_form_input-text" formControlName="image">
+      <!-- IMAGE -->
+      <button type="submit" class="signup_button" [disabled]="editUserForm.invalid">Guardar</button>
+    </form>
+  </div>
+
+</section>

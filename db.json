@@ -1,0 +1,132 @@
+{
+  "authors": [
+    {
+      "id": "1",
+      "fullName": "David East",
+      "image": "https://randomuser.me/api/portraits/men/83.jpg"
+    },
+    {
+      "id": "2",
+      "fullName": "David Teitelbaum",
+      "image": "https://randomuser.me/api/portraits/men/82.jpg"
+    },
+    {
+      "id": "callejass",
+      "fullName": "Sergio",
+      "image": "https://randomuser.me/api/portraits/lego/2.jpg"
+    }
+  ],
+  "authenticated": [
+    {
+      "id": "sq2sr1540224735687",
+      "author": "1"
+    },
+    {
+      "id": "xjvfq1540276460227",
+      "author": "callejass"
+    },
+    {
+      "id": "FPAN91540308965382",
+      "author": "callejass"
+    },
+    {
+      "id": "rzrRD1540371901223",
+      "author": "1"
+    }
+  ],
+  "twimps": [
+    {
+      "id": "Mx5Cf1483389903318",
+      "author": "1",
+      "by": "David East",
+      "content": "Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "12-10-2016"
+    },
+    {
+      "id": "T4qdo1483390015454",
+      "author": "2",
+      "by": "David Teitelbaum",
+      "content": "Lorem ipsum 2 dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "12-10-2016"
+    },
+    {
+      "id": "gfgsfdgsfg",
+      "author": "2",
+      "by": "David Teitelbaum",
+      "content": "Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "12-10-2016"
+    },
+    {
+      "id": "oljhffvcg",
+      "author": "2",
+      "by": "David Teitelbaum",
+      "content": "Lorem ipsum 4 dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "12-10-2015"
+    },
+    {
+      "id": "hdfghtgfhhff",
+      "author": "2",
+      "by": "David Teitelbaum",
+      "content": "Lorem ipsum 5 dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "12-10-2017"
+    },
+    {
+      "id": "5",
+      "author": "callejass",
+      "by": "Author",
+      "content": "adfadf",
+      "timestamp": "23-10-2018"
+    },
+    {
+      "id": "6",
+      "author": "callejass",
+      "by": "Author",
+      "content": "bbffbfbf",
+      "timestamp": "23-10-2018"
+    },
+    {
+      "id": "7",
+      "author": "callejass",
+      "by": "Author",
+      "content": "aaaaaa",
+      "timestamp": "23-10-2018"
+    }
+  ],
+  "author-favorites": [
+    {
+      "id": "1",
+      "twimps": [
+        "oljhffvcg",
+        "gfgsfdgsfg",
+        "Mx5Cf1483389903318",
+        "5"
+      ]
+    },
+    {
+      "id": "2",
+      "twimps": [
+        "Mx5Cf1483389903318"
+      ]
+    },
+    {
+      "id": "callejass",
+      "twimps": [
+        "5"
+      ]
+    }
+  ],
+  "author-twimps": [
+    {
+      "id": "1",
+      "twimps": [
+        "Mx5Cf1483389903318"
+      ]
+    },
+    {
+      "id": "2",
+      "twimps": [
+        "T4qdo1483390015454"
+      ]
+    }
+  ]
+}
